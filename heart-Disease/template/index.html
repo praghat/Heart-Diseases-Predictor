@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../static/style.css">
+
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+
+<div class="form">
+    <a class="title">Get to know your Heart🫀🩺</a>
+       
+    
+        <form action = "{{url_for('predict')}}"  method="post" >
+            <div class = "input-container ic1">
+            <input type="number" name="age" placeholder=" " >
+            <div class="cut"></div>
+            <label for="age" class="placeholder">AGE</label>
+            </div>
+
+            <div class = "input-container ic2">
+            <input type="number" name="bp" placeholder=" " >
+            <div class="cut"></div>
+            <label for="bp" class="placeholder">Blood Pressure</label>
+            </div>
+
+            <div class = "input-container ic2">
+            <input type="number" name="chol" placeholder=" " >
+            <div class="cut"></div>
+            <label for="chol" class="placeholder">Cholestrol</label>
+            </div>
+
+            <div class = "input-container ic2">
+            <input type="number" name="bs" placeholder=" " >
+            <div class="cut"></div>
+            <label for="bs" class="placeholder">Blood Sugar</label>
+            </div>
+            
+            
+            <div class = "input-container ic2">
+            <input type="number" name="ecg" placeholder=" " >
+            <div class="cut"></div>
+            <label for="ecg" class="placeholder">ECG</label>
+            </div>
+                
+            <div class = "input-container ic2">
+            <input type="number" name="ca" placeholder=" " >
+            <div class="cut"></div>
+            <label for="ca" class="placeholder">CA</label>
+            </div>
+                    
+            <div class = "input-container ic2">
+            <input type="number" name="thal" placeholder=" " >
+            <div class="cut"></div>
+            <label for="thal" class="placeholder">THAL</label>
+            </div>
+
+
+            <!--Submit Button-->
+            <button type="text" class="submit" >predict</button>
+        </form>
+  
+
+        
+    </div>
+    
+
+
+</body>
+</html>
